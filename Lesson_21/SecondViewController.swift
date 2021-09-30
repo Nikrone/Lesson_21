@@ -9,10 +9,12 @@ import Foundation
 import UIKit
 
 class SecondViewController: UIViewController {
+    var delegate: ViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        delegate?.doSomething()
     }
 
 }
