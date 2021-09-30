@@ -8,21 +8,33 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var zhenya:Person?
+    var mazda:Car = Car(name: "Mazda")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        zhenya = Person(name: "Zhenya", car: mazda)
+        zhenya?.car = mazda
+        mazda.owner = zhenya
+        
+        zhenya = nil
+        
     }
-
 
 }
 
+
+// unowned используется тогда, когда точно уверены что не будет-nil!
+
 class Person {
     var name: String
-    var car: Car?
+    unowned var car: Car
     
-    init(name: String) {
+    init(name: String, car: Car) {
         self.name = name
+        self.car = car
         print("Person allocated")
     }
     
@@ -38,10 +50,10 @@ class Car {
     
     init(name: String) {
         self.name = name
-        print("Person allocated")
+        print("Car allocated")
     }
     
         deinit {
-            print("Person deallocated")
+            print("Car deallocated")
         }
 }
