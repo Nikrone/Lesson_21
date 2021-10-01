@@ -16,7 +16,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        var closure: (Bool) -> (Bool) = { boolVar in
+            boolVar
+            print(2345)
+            
+            return boolVar
+        }
+        
     }
     
     @IBAction private func buttonPressed() {
