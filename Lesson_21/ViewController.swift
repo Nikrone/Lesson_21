@@ -24,6 +24,11 @@ class ViewController: UIViewController {
             print(23)
         })
         
+        DispatchQueue.global().async {
+            for i in 0 ..<  1_000 {
+                print("\(i)")
+            }
+        }
     }
 
     func save(closure: @escaping (() -> ())) {
