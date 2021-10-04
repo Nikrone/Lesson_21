@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         })
         
         DispatchQueue.global().async {
+            
+            DispatchQueue.global().sync {
+                for i in 0 ..<  1_000 {
+                    print("\(i)")
+                }
+            }
             for i in 0 ..<  1_000 {
                 print("\(i)")
             }

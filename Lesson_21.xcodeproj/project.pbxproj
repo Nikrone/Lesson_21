@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712A979C270B5A3200109327 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712A979B270B5A3200109327 /* DataManager.swift */; };
 		71FF7BA427060CB9000D0C4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF7BA327060CB9000D0C4D /* AppDelegate.swift */; };
 		71FF7BA627060CB9000D0C4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF7BA527060CB9000D0C4D /* SceneDelegate.swift */; };
 		71FF7BA827060CB9000D0C4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF7BA727060CB9000D0C4D /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		712A979B270B5A3200109327 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		71FF7BA027060CB9000D0C4D /* Lesson_21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson_21.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FF7BA327060CB9000D0C4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71FF7BA527060CB9000D0C4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				71FF7BA327060CB9000D0C4D /* AppDelegate.swift */,
 				71FF7BA527060CB9000D0C4D /* SceneDelegate.swift */,
 				71FF7BA727060CB9000D0C4D /* ViewController.swift */,
+				712A979B270B5A3200109327 /* DataManager.swift */,
 				71FF7BBA2706195B000D0C4D /* SecondViewController.swift */,
 				71FF7BA927060CB9000D0C4D /* Main.storyboard */,
 				71FF7BAF27060CBB000D0C4D /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71FF7BAE27060CB9000D0C4D /* Lesson_21.xcdatamodeld in Sources */,
+				712A979C270B5A3200109327 /* DataManager.swift in Sources */,
 				71FF7BA827060CB9000D0C4D /* ViewController.swift in Sources */,
 				71FF7BA427060CB9000D0C4D /* AppDelegate.swift in Sources */,
 				71FF7BBB2706195B000D0C4D /* SecondViewController.swift in Sources */,
