@@ -11,6 +11,7 @@ import UIKit
 // unowned используется тогда, когда точно уверены что не будет-nil!
 class ViewController: UIViewController {
     
+    var dataSource: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +35,10 @@ class ViewController: UIViewController {
             for i in 0 ..<  1_000 {
                 print("\(i)")
             }
+        }
+        
+        DataManager.obtainData { (stringsArray) in
+            self.dataSource = stringsArray
         }
     }
 

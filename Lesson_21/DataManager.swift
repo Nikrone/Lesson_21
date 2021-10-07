@@ -9,7 +9,7 @@ import Foundation
 
 class DataManager {
     
-    func obtainData(completion: @escaping (([String]) -> Void)) {
+   class func obtainData(completion: @escaping (([String]) -> Void)) {
         DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
             completion(["hello", "all", "there", "!"])
         }
